@@ -1,0 +1,22 @@
+#root {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	background: rgb(220, 255, 255);
+}
+
+* {
+	user-select: none;
+}
+
+.key {
+	box-sizing: border-box;
+	width: 62px;
+	height: 62px;
+	font-size: 32px;
+	background: #FFFFFF;
+	/* border: 1px solid black; */
+	backdrop-filter: blur(6px);
+	border-radius: 16px;
+}
