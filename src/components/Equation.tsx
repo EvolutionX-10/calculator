@@ -1,7 +1,7 @@
-export function Equation({ eq }: { eq?: string }) {
+export function Equation({ value }: { value: string }) {
 	return (
-		<div className="absolute right-0 top-0 p-3">
-			{eq ?? ''}
+		<div className="w-full overflow-x-scroll rounded-t-3xl bg-slate-100 p-2 text-right text-5xl tracking-wide">
+			{value}
 		</div>
 	);
 }
