@@ -1,6 +1,6 @@
 export function Equation({ value }: { value: string }) {
 	return (
-		<div className="w-full overflow-x-auto rounded-t-3xl bg-slate-100 p-2 text-right text-5xl tracking-wide">
+		<div className="w-full overflow-x-auto p-2 text-right text-5xl tracking-wide dark:text-white">
 			{value}
 		</div>
 	);

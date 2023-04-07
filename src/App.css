@@ -9,3 +9,9 @@
 * {
 	user-select: none;
 }
+
+@media (prefers-color-scheme: dark) {
+	#root {
+		background: #001929;
+	}
+}

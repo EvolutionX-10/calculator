@@ -7,7 +7,7 @@ export function Key(props: iKey) {
 		<button
 			className={`${
 				props.className ??
-				'box-border h-16 w-16 rounded-2xl bg-white text-3xl backdrop-blur-lg'
+				'box-border h-16 w-16 rounded-2xl bg-white text-3xl backdrop-blur-lg dark:bg-gray-700 dark:text-gray-300'
 			} hover:drop-shadow-xl`}
 			onClick={
 				props.onClick

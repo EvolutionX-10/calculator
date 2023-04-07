@@ -43,7 +43,10 @@ export function Keypad({
 			></Key>
 			<Key
 				value="/"
-				className={'bg-blue-200 text-blue-500' + commoncss}
+				className={
+					'bg-blue-200 text-blue-500 dark:bg-blue-700 dark:text-blue-300' +
+					commoncss
+				}
 				press={onPress}
 				current={value}
 				result={update}
@@ -51,7 +54,8 @@ export function Keypad({
 			<Key
 				value="*"
 				className={
-					'bg-blue-200 pt-3 text-blue-500' + commoncss
+					'bg-blue-200 pt-3 text-blue-500 dark:bg-blue-700 dark:text-blue-300' +
+					commoncss
 				}
 				press={onPress}
 				current={value}
@@ -61,26 +65,38 @@ export function Keypad({
 				value="7"
 				press={onPress}
 				current={value}
-				className={'bg-white text-blue-500' + commoncss}
+				className={
+					'bg-white text-blue-500 dark:bg-gray-800' +
+					commoncss
+				}
 				result={update}
 			></Key>
 			<Key
 				value="8"
 				press={onPress}
 				current={value}
-				className={'bg-white text-blue-500' + commoncss}
+				className={
+					'bg-white text-blue-500 dark:bg-gray-800' +
+					commoncss
+				}
 				result={update}
 			></Key>
 			<Key
 				value="9"
 				press={onPress}
 				current={value}
-				className={'bg-white text-blue-500' + commoncss}
+				className={
+					'bg-white text-blue-500 dark:bg-gray-800' +
+					commoncss
+				}
 				result={update}
 			></Key>
 			<Key
 				value="-"
-				className={'bg-blue-200 text-blue-500' + commoncss}
+				className={
+					'bg-blue-200 text-blue-500 dark:bg-blue-700 dark:text-blue-300' +
+					commoncss
+				}
 				press={onPress}
 				current={value}
 				result={update}
@@ -89,26 +105,38 @@ export function Keypad({
 				value="4"
 				press={onPress}
 				current={value}
-				className={'bg-white text-blue-500' + commoncss}
+				className={
+					'bg-white text-blue-500 dark:bg-gray-800' +
+					commoncss
+				}
 				result={update}
 			></Key>
 			<Key
 				value="5"
 				press={onPress}
 				current={value}
-				className={'bg-white text-blue-500' + commoncss}
+				className={
+					'bg-white text-blue-500 dark:bg-gray-800' +
+					commoncss
+				}
 				result={update}
 			></Key>
 			<Key
 				value="6"
 				press={onPress}
 				current={value}
-				className={'bg-white text-blue-500' + commoncss}
+				className={
+					'bg-white text-blue-500 dark:bg-gray-800' +
+					commoncss
+				}
 				result={update}
 			></Key>
 			<Key
 				value="+"
-				className={'bg-blue-200 text-blue-500' + commoncss}
+				className={
+					'bg-blue-200 text-blue-500 dark:bg-blue-700 dark:text-blue-300' +
+					commoncss
+				}
 				press={onPress}
 				current={value}
 				result={update}
@@ -117,25 +145,34 @@ export function Keypad({
 				value="1"
 				press={onPress}
 				current={value}
-				className={'bg-white text-blue-500' + commoncss}
+				className={
+					'bg-white text-blue-500 dark:bg-gray-800' +
+					commoncss
+				}
 				result={update}
 			></Key>
 			<Key
 				value="2"
 				press={onPress}
 				current={value}
-				className={'bg-white text-blue-500' + commoncss}
+				className={
+					'bg-white text-blue-500 dark:bg-gray-800' +
+					commoncss
+				}
 				result={update}
 			></Key>
 			<Key
 				value="3"
 				press={onPress}
 				current={value}
-				className={'bg-white text-blue-500' + commoncss}
+				className={
+					'bg-white text-blue-500 dark:bg-gray-800' +
+					commoncss
+				}
 				result={update}
 			></Key>
 			<Key
-				className="row-span-2 box-border h-full w-16 rounded-2xl bg-blue-500 text-3xl text-white shadow-cus backdrop-blur-lg"
+				className="dark:bg-blue row-span-2 box-border h-full w-16 rounded-2xl bg-blue-500 text-3xl text-white shadow-cus backdrop-blur-lg dark:shadow-none"
 				value="="
 				press={onPress}
 				onClick={() => {
@@ -153,7 +190,7 @@ export function Keypad({
 			></Key>
 			<Key
 				value="0"
-				className="col-span-2 box-border h-16 w-full rounded-2xl bg-white text-3xl text-blue-500 backdrop-blur-lg"
+				className="col-span-2 box-border h-16 w-full rounded-2xl bg-white text-3xl text-blue-500 backdrop-blur-lg dark:bg-gray-800"
 				press={onPress}
 				current={value}
 				result={update}
@@ -162,7 +199,10 @@ export function Keypad({
 				value="."
 				press={onPress}
 				current={value}
-				className={'bg-white text-blue-500' + commoncss}
+				className={
+					'bg-white text-blue-500 dark:bg-gray-800' +
+					commoncss
+				}
 				result={update}
 			></Key>
 		</div>
