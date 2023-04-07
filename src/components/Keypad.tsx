@@ -43,9 +43,7 @@ export function Keypad({
 			></Key>
 			<Key
 				value="/"
-				className={
-					'bg-blue-200 pb-1 text-blue-500' + commoncss
-				}
+				className={'bg-blue-200 text-blue-500' + commoncss}
 				press={onPress}
 				current={value}
 				result={update}
@@ -53,7 +51,7 @@ export function Keypad({
 			<Key
 				value="*"
 				className={
-					'bg-blue-200 pt-2 text-blue-500' + commoncss
+					'bg-blue-200 pt-3 text-blue-500' + commoncss
 				}
 				press={onPress}
 				current={value}
@@ -82,9 +80,7 @@ export function Keypad({
 			></Key>
 			<Key
 				value="-"
-				className={
-					'bg-blue-200 pb-2 text-blue-500' + commoncss
-				}
+				className={'bg-blue-200 text-blue-500' + commoncss}
 				press={onPress}
 				current={value}
 				result={update}
@@ -112,9 +108,7 @@ export function Keypad({
 			></Key>
 			<Key
 				value="+"
-				className={
-					'bg-blue-200 pb-2 text-blue-500' + commoncss
-				}
+				className={'bg-blue-200 text-blue-500' + commoncss}
 				press={onPress}
 				current={value}
 				result={update}
