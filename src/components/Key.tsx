@@ -5,7 +5,10 @@ export function Key(props: iKey) {
 			: props.value;
 	return (
 		<button
-			className={`key ${props.className} hover:drop-shadow-xl`}
+			className={`${
+				props.className ??
+				'box-border h-16 w-16 rounded-2xl bg-white text-3xl backdrop-blur-lg'
+			} hover:drop-shadow-xl`}
 			onClick={
 				props.onClick
 					? props.onClick

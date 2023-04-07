@@ -22,6 +22,8 @@ export function Keypad({
 		if (+value === +newresult) onEqual('');
 		else onEqual(newresult);
 	};
+	const commoncss =
+		' box-border h-16 w-16 rounded-2xl text-3xl backdrop-blur-lg';
 	return (
 		<div className="grid grid-cols-4 gap-2 gap-x-5">
 			<Key
@@ -41,14 +43,18 @@ export function Keypad({
 			></Key>
 			<Key
 				value="/"
-				className="bg-blue-200 pb-1 text-blue-500"
+				className={
+					'bg-blue-200 pb-1 text-blue-500' + commoncss
+				}
 				press={onPress}
 				current={value}
 				result={update}
 			></Key>
 			<Key
 				value="*"
-				className="t bg-blue-200 pt-2 text-blue-500"
+				className={
+					'bg-blue-200 pt-2 text-blue-500' + commoncss
+				}
 				press={onPress}
 				current={value}
 				result={update}
@@ -57,26 +63,28 @@ export function Keypad({
 				value="7"
 				press={onPress}
 				current={value}
-				className="text-blue-500"
+				className={'bg-white text-blue-500' + commoncss}
 				result={update}
 			></Key>
 			<Key
 				value="8"
 				press={onPress}
 				current={value}
-				className="text-blue-500"
+				className={'bg-white text-blue-500' + commoncss}
 				result={update}
 			></Key>
 			<Key
 				value="9"
 				press={onPress}
 				current={value}
-				className="text-blue-500"
+				className={'bg-white text-blue-500' + commoncss}
 				result={update}
 			></Key>
 			<Key
 				value="-"
-				className="bg-blue-200 pb-2 text-blue-500"
+				className={
+					'bg-blue-200 pb-2 text-blue-500' + commoncss
+				}
 				press={onPress}
 				current={value}
 				result={update}
@@ -85,26 +93,28 @@ export function Keypad({
 				value="4"
 				press={onPress}
 				current={value}
-				className="text-blue-500"
+				className={'bg-white text-blue-500' + commoncss}
 				result={update}
 			></Key>
 			<Key
 				value="5"
 				press={onPress}
 				current={value}
-				className="text-blue-500"
+				className={'bg-white text-blue-500' + commoncss}
 				result={update}
 			></Key>
 			<Key
 				value="6"
 				press={onPress}
 				current={value}
-				className="text-blue-500"
+				className={'bg-white text-blue-500' + commoncss}
 				result={update}
 			></Key>
 			<Key
 				value="+"
-				className="bg-blue-200 pb-2 text-blue-500"
+				className={
+					'bg-blue-200 pb-2 text-blue-500' + commoncss
+				}
 				press={onPress}
 				current={value}
 				result={update}
@@ -113,25 +123,25 @@ export function Keypad({
 				value="1"
 				press={onPress}
 				current={value}
-				className="text-blue-500"
+				className={'bg-white text-blue-500' + commoncss}
 				result={update}
 			></Key>
 			<Key
 				value="2"
 				press={onPress}
 				current={value}
-				className="text-blue-500"
+				className={'bg-white text-blue-500' + commoncss}
 				result={update}
 			></Key>
 			<Key
 				value="3"
 				press={onPress}
 				current={value}
-				className="text-blue-500"
+				className={'bg-white text-blue-500' + commoncss}
 				result={update}
 			></Key>
 			<Key
-				className="row-span-2 h-full bg-blue-500 text-white shadow-cus"
+				className="row-span-2 box-border h-full w-16 rounded-2xl bg-blue-500 text-3xl text-white shadow-cus backdrop-blur-lg"
 				value="="
 				press={onPress}
 				onClick={() => {
@@ -149,7 +159,7 @@ export function Keypad({
 			></Key>
 			<Key
 				value="0"
-				className="col-span-2 w-full text-blue-500"
+				className="col-span-2 box-border h-16 w-full rounded-2xl bg-white text-3xl text-blue-500 backdrop-blur-lg"
 				press={onPress}
 				current={value}
 				result={update}
@@ -158,7 +168,7 @@ export function Keypad({
 				value="."
 				press={onPress}
 				current={value}
-				className="text-blue-500"
+				className={'bg-white text-blue-500' + commoncss}
 				result={update}
 			></Key>
 		</div>
