@@ -109,9 +109,9 @@ export function Keypad({
 				onClick={() => {
 					let result;
 					try {
-						result = eval(value)
+						result = eval(value);
 					} catch {
-						alert("Invalid Expression");
+						alert('Invalid Expression');
 						result = '0';
 					}
 					onPress(result);
