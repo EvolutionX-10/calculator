@@ -7,7 +7,7 @@ export function Calculator() {
 	const [result, setResult] = useState('');
 
 	return (
-		<div className="flex w-85 flex-col items-center justify-center rounded-3xl bg-slate-100 p-3 shadow-cus backdrop-blur-3xl dark:bg-gray-900">
+		<div className="flex w-85 flex-col items-center justify-center rounded-3xl bg-purple-100 p-3 shadow-cus dark:shadow-lg dark:shadow-[#5f3989] backdrop-blur-3xl dark:bg-gray-900">
 			<Display value={display} result={result}></Display>
 			<Keypad
 				onPress={setDisplay}

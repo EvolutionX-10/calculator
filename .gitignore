@@ -26,3 +26,7 @@ dist-ssr
 # Yarn files
 .yarn/install-state.gz
 .yarn/build-state.yml
+
+# Yarn files
+.yarn/install-state.gz
+.yarn/build-state.yml

@@ -8,11 +8,11 @@ export default {
 	theme: {
 		extend: {
 			boxShadow: {
-				'cus': '-9px 13px 23px rgba(0, 163, 255, 0.65), inset -3px 4px 11px #B0DFFF;'
+				cus: '-9px 13px 23px rgba(250, 163, 255, 0.85), inset -3px -1px 11px #f5d0fe;',
 			},
 			spacing: {
-				'85': '21rem'
-			}
+				85: '21rem',
+			},
 		},
 	},
 	plugins: [],
